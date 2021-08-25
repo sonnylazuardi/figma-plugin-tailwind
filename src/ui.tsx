@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { eventHandler, setEventCallback } from "./apiHandler";
+import { apiHandler } from "./apiHandler";
 import "./ui.css";
 
 let textbox: HTMLInputElement;
@@ -14,7 +14,7 @@ const App = () => {
   const onCreate = () => {
     const count = parseInt(textbox.value, 10);
 
-    eventHandler.createRectangles(count);
+    apiHandler.createRectangles(count);
   };
 
   const onCancel = () => {};

@@ -1,6 +1,6 @@
 import { createPluginAPI, createUIAPI } from "figma-jsonrpc";
 
-export const eventHandler = createPluginAPI({
+export const apiHandler = createPluginAPI({
   getCommand() {
     return figma.command;
   },
