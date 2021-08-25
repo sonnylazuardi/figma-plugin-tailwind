@@ -1,0 +1,11 @@
+{
+  "name": "Cek Ejaan",
+  "id": "1012301985798037556",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "editorType": [
+    "figma",
+    "figjam"
+  ],
+  "ui": "dist/ui.html"
+}
