@@ -13,15 +13,6 @@ export const eventHandler = createPluginAPI({
   notify(message: string) {
     figma.notify(message);
   },
-  placeSvg(svg: any) {
-    const page = figma.currentPage;
-    let node = figma.createNodeFromSvg(svg);
-    if (!node) {
-      console.log("Import failed: invalid SVG");
-      return;
-    }
-    page.appendChild(node);
-  },
   addRelaunch(fileKey: string) {
     let node = figma.currentPage;
     if (!node) {
